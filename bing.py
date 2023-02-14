@@ -124,10 +124,10 @@ if __name__ == '__main__':
     proxyList = readProxy()
 
     method = int(input('[1] SOCKS4\n[2] SOCKS5\n[3] NONE\n[>] SELECT PROXY METHOD : '))
-    ctypes.windll.kernel32.SetConsoleTitleW(f"Welcome To Bing Dork Searcher V 0.1 | RUNNING | URL : {len(countURL)} | USED DORK : {len(countUsedDork)} |")
+ 
 
     with Pool(processes=10) as threads:
         threads.map(Bing, itertools.product(dorkList, [7, 17, 27, 37, 47, 57, 67, 77, 87, 97, 107]))
 
     input('__________________ FINISH __________________')
-    ctypes.windll.kernel32.SetConsoleTitleW(f"Welcome To Bing Dork Searcher V 0.1 | FINISH | URL : {len(countURL)} | USED DORK : {len(countUsedDork)} |")
+    
