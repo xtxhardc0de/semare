@@ -115,7 +115,6 @@ if __name__ == '__main__':
                                                                    
 """)
 
-    ctypes.windll.kernel32.SetConsoleTitleW("Welcome To Bing Dork Searcher V 0.1 | STANDING |")
 
     duplicate = []
     countURL = []
